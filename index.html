@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./starter-code/assets/global-assets/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Meet landing page</title>
@@ -18,7 +18,7 @@
     <header class="header-section">
       <svg
         class="header-section__logo"
-        width="119"
+        width="118"
         height="28"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -37,6 +37,66 @@
     </header>
 
     <main class="main-content">
+      
+      <!-- Mobile Hero Section -->
+      <section class="hero-section--mobile">
+        <img
+          class="hero-section--mobile__combined-faces"
+          src="./starter-code/assets/tablet/image-hero.png"
+          alt="Images of people"
+          width="375"
+          height="160"
+        />
+        <article class="hero-section__text-content-container">
+          <h1 class="hero-section__header text-preset-1">
+            Group Chat for Everyone
+          </h1>
+          <p class="hero-section__description text-preset-4">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="hero_section__cta-container">
+            <a href="#" class="hero-section__download-cta text-preset-5">
+              Download v1.3
+            </a>
+            <a href="#" class="hero-section__info-cta text-preset-5">
+              What is it?
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Tablet Hero Section -->
+
+      <section class="hero-section--tablet">
+        <img
+          class="hero-section--tablet__combined-faces"
+          src="./starter-code/assets/tablet/image-hero.png"
+          alt="Images of people"
+          width="768"
+          height="303"
+        />
+        <article class="hero-section__text-content-container">
+          <h1 class="hero-section__header text-preset-1">
+            Group Chat for Everyone
+          </h1>
+          <p class="hero-section__description text-preset-4">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="hero_section__cta-container">
+            <a href="#" class="hero-section__download-cta text-preset-5">
+              Download v1.3
+            </a>
+            <a href="#" class="hero-section__info-cta text-preset-5">
+              What is it?
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Desktop Hero Section -->
+
       <section class="hero-section">
         <img
           class="hero-section__left-image"
@@ -46,20 +106,20 @@
           height="303"
         />
         <article class="hero-section__text-content-container">
-          <h1 class="hero-section__header desktop-text-preset-1">
+          <h1 class="hero-section__header text-preset-1">
             Group Chat for Everyone
           </h1>
-          <p class="hero-section__description desktop-text-preset-4">
+          <p class="hero-section__description text-preset-4">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
           <div class="hero_section__cta-container">
-            <button class="hero-section__download-cta desktop-text-preset-5">
+            <a href="#" class="hero-section__download-cta text-preset-5">
               Download v1.3
-            </button>
-            <button class="hero-section__info-cta desktop-text-preset-5">
+            </a>
+            <a href="#" class="hero-section__info-cta text-preset-5">
               What is it?
-            </button>
+            </a>
           </div>
         </article>
         <img
@@ -136,14 +196,14 @@
 
         <article class="benefit-section__text-content-container">
           <div class="benefit-section__title-container">
-            <h3 class="benefit-section__smaller-title desktop-text-preset-3">
+            <h3 class="benefit-section__smaller-title text-preset-3">
               Built for modern use
             </h3>
-            <h2 class="benefit-section__larger-title desktop-text-preset-2">
+            <h2 class="benefit-section__larger-title text-preset-2">
               Smarter meetings, all in one place
             </h2>
           </div>
-          <p class="benefit-section__description desktop-text-preset-4">
+          <p class="benefit-section__description text-preset-4">
             Send messages, share files, show your screen, and record your
             meetings — all in one workspace. Control who can join with
             invite-only team access, data encryption, and data export.
@@ -184,16 +244,16 @@
         />
       </svg>
 
-      <h2 class="footer-section__title desktop-text-preset-2">
+      <h2 class="footer-section__title text-preset-2">
         Experience more together
       </h2>
-      <p class="footer-section__description desktop-text-preset-4">
+      <p class="footer-section__description text-preset-4">
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </p>
-      <button class="footer-section__download-cta desktop-text-preset-5">
+      <a href="#" class="footer-section__download-cta text-preset-5">
         Download v1.3
-      </button>
+      </a>
     </footer>
   </body>
 </html>
