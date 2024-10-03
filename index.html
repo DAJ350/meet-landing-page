@@ -1,94 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/global-assets/favicon-32x32.png"
+      href="./starter-code/assets/global-assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Meet landing page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./starter-code/assets/global-assets/favicon-32x32.png"
-    href="./starter-code/assets/global-assets/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <title>Frontend Mentor | Meet landing page</title>
-</head>
-
-<body>
-  <header class="header-section">
-    <svg class="header-section__logo" width="118" width="118" height="28" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fill-rule="evenodd">
-        <g>
-          <circle fill="#4D96A9" cx="7" cy="21" r="7" />
-          <circle fill="#855FB1" cx="21" cy="7" r="7" />
+  <body>
+    <header class="header-section">
+      <svg
+        class="header-section__logo"
+        width="118"
+        width="118"
+        height="28"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <g>
+            <circle fill="#4D96A9" cx="7" cy="21" r="7" />
+            <circle fill="#855FB1" cx="21" cy="7" r="7" />
+          </g>
+          <path
+            d="M44.121 25.676V13.95c.316-.41.701-.718 1.154-.923a3.677 3.677 0 011.533-.308c.822 0 1.48.286 1.976.859.495.572.743 1.323.743 2.251v9.848h5.121v-10.56c0-.195-.005-.384-.016-.567a8.383 8.383 0 00-.047-.535c.337-.41.738-.729 1.201-.956.464-.226.98-.34 1.55-.34.821 0 1.48.286 1.975.859.495.572.743 1.323.743 2.251v9.848h5.121v-10.56c0-2.009-.606-3.661-1.817-4.957-1.212-1.296-2.767-1.944-4.663-1.944-1.096 0-2.108.206-3.035.616a6.956 6.956 0 00-2.403 1.75 6.042 6.042 0 00-2.134-1.734c-.853-.42-1.796-.632-2.829-.632-.78 0-1.523.12-2.229.357a6.264 6.264 0 00-1.944 1.069V8.539H39v17.137h5.121zM76.556 26c1.39 0 2.64-.205 3.746-.615 1.106-.41 2.186-1.07 3.24-1.977l-3.382-3.077c-.4.41-.885.729-1.455.956a5.082 5.082 0 01-1.896.34c-.97 0-1.813-.254-2.53-.762a4.508 4.508 0 01-1.58-1.96h11.918V17.61c0-1.34-.21-2.586-.632-3.742-.422-1.155-1.007-2.143-1.755-2.964a8.225 8.225 0 00-2.671-1.943c-1.033-.476-2.16-.713-3.383-.713a8.657 8.657 0 00-3.43.68 8.445 8.445 0 00-2.766 1.879 8.9 8.9 0 00-1.849 2.835 8.985 8.985 0 00-.68 3.482c0 1.23.237 2.392.712 3.482a8.93 8.93 0 001.928 2.835 8.776 8.776 0 002.893 1.879 9.404 9.404 0 003.572.68zm3.035-10.755h-6.987c.253-.864.685-1.533 1.296-2.008.612-.475 1.339-.713 2.182-.713.822 0 1.543.248 2.165.745.622.497 1.07 1.155 1.344 1.976zM95.365 26c1.391 0 2.64-.205 3.746-.615 1.107-.41 2.187-1.07 3.24-1.977l-3.382-3.077c-.4.41-.885.729-1.454.956a5.082 5.082 0 01-1.897.34c-.97 0-1.812-.254-2.529-.762a4.508 4.508 0 01-1.58-1.96h11.918V17.61c0-1.34-.211-2.586-.633-3.742-.421-1.155-1.006-2.143-1.754-2.964a8.225 8.225 0 00-2.671-1.943c-1.033-.476-2.16-.713-3.383-.713a8.657 8.657 0 00-3.43.68 8.445 8.445 0 00-2.766 1.879 8.9 8.9 0 00-1.85 2.835 8.985 8.985 0 00-.68 3.482c0 1.23.238 2.392.712 3.482a8.93 8.93 0 001.929 2.835 8.776 8.776 0 002.892 1.879 9.404 9.404 0 003.572.68zM98.4 15.245h-6.986c.253-.864.685-1.533 1.296-2.008.611-.475 1.338-.713 2.181-.713.822 0 1.544.248 2.166.745.621.497 1.07 1.155 1.343 1.976zm15.87 10.658c.484 0 1.085-.049 1.802-.146.716-.097 1.306-.221 1.77-.372V21.14c-.422.13-.811.221-1.17.275a7.639 7.639 0 01-1.138.081c-.822 0-1.396-.156-1.723-.47-.326-.313-.49-.847-.49-1.603v-6.511H118V8.539h-4.679V3l-5.12 1.134v4.405h-3.383v4.374h3.382v7.548c0 1.792.511 3.147 1.533 4.065 1.022.918 2.535 1.377 4.537 1.377z"
+            fill="#28283D"
+            fill-rule="nonzero"
+          />
         </g>
-        <path
-          d="M44.121 25.676V13.95c.316-.41.701-.718 1.154-.923a3.677 3.677 0 011.533-.308c.822 0 1.48.286 1.976.859.495.572.743 1.323.743 2.251v9.848h5.121v-10.56c0-.195-.005-.384-.016-.567a8.383 8.383 0 00-.047-.535c.337-.41.738-.729 1.201-.956.464-.226.98-.34 1.55-.34.821 0 1.48.286 1.975.859.495.572.743 1.323.743 2.251v9.848h5.121v-10.56c0-2.009-.606-3.661-1.817-4.957-1.212-1.296-2.767-1.944-4.663-1.944-1.096 0-2.108.206-3.035.616a6.956 6.956 0 00-2.403 1.75 6.042 6.042 0 00-2.134-1.734c-.853-.42-1.796-.632-2.829-.632-.78 0-1.523.12-2.229.357a6.264 6.264 0 00-1.944 1.069V8.539H39v17.137h5.121zM76.556 26c1.39 0 2.64-.205 3.746-.615 1.106-.41 2.186-1.07 3.24-1.977l-3.382-3.077c-.4.41-.885.729-1.455.956a5.082 5.082 0 01-1.896.34c-.97 0-1.813-.254-2.53-.762a4.508 4.508 0 01-1.58-1.96h11.918V17.61c0-1.34-.21-2.586-.632-3.742-.422-1.155-1.007-2.143-1.755-2.964a8.225 8.225 0 00-2.671-1.943c-1.033-.476-2.16-.713-3.383-.713a8.657 8.657 0 00-3.43.68 8.445 8.445 0 00-2.766 1.879 8.9 8.9 0 00-1.849 2.835 8.985 8.985 0 00-.68 3.482c0 1.23.237 2.392.712 3.482a8.93 8.93 0 001.928 2.835 8.776 8.776 0 002.893 1.879 9.404 9.404 0 003.572.68zm3.035-10.755h-6.987c.253-.864.685-1.533 1.296-2.008.612-.475 1.339-.713 2.182-.713.822 0 1.543.248 2.165.745.622.497 1.07 1.155 1.344 1.976zM95.365 26c1.391 0 2.64-.205 3.746-.615 1.107-.41 2.187-1.07 3.24-1.977l-3.382-3.077c-.4.41-.885.729-1.454.956a5.082 5.082 0 01-1.897.34c-.97 0-1.812-.254-2.529-.762a4.508 4.508 0 01-1.58-1.96h11.918V17.61c0-1.34-.211-2.586-.633-3.742-.421-1.155-1.006-2.143-1.754-2.964a8.225 8.225 0 00-2.671-1.943c-1.033-.476-2.16-.713-3.383-.713a8.657 8.657 0 00-3.43.68 8.445 8.445 0 00-2.766 1.879 8.9 8.9 0 00-1.85 2.835 8.985 8.985 0 00-.68 3.482c0 1.23.238 2.392.712 3.482a8.93 8.93 0 001.929 2.835 8.776 8.776 0 002.892 1.879 9.404 9.404 0 003.572.68zM98.4 15.245h-6.986c.253-.864.685-1.533 1.296-2.008.611-.475 1.338-.713 2.181-.713.822 0 1.544.248 2.166.745.621.497 1.07 1.155 1.343 1.976zm15.87 10.658c.484 0 1.085-.049 1.802-.146.716-.097 1.306-.221 1.77-.372V21.14c-.422.13-.811.221-1.17.275a7.639 7.639 0 01-1.138.081c-.822 0-1.396-.156-1.723-.47-.326-.313-.49-.847-.49-1.603v-6.511H118V8.539h-4.679V3l-5.12 1.134v4.405h-3.383v4.374h3.382v7.548c0 1.792.511 3.147 1.533 4.065 1.022.918 2.535 1.377 4.537 1.377z"
-          fill="#28283D" fill-rule="nonzero" />
-      </g>
-    </svg>
-  </header>
+      </svg>
+    </header>
 
-  <main class="main-content">
-    <!-- Mobile Hero Section -->
-    <section class="hero-section--mobile">
-      <img class="hero-section--mobile__combined-faces" src="./starter-code/assets/tablet/image-hero.png"
-        alt="Images of people" width="416.1" height="160" />
-      <article class="hero-section__text-content-container">
-        <h1 class="hero-section__header text-preset-1">
-          Group Chat for Everyone
-        </h1>
-        <p class="hero-section__description text-preset-4">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <div class="hero-section__cta-container">
-          <a href="#" class="hero-section__download-cta text-preset-5">
-            Download<span class="hero-section__download-cta__alternative-text">v1.3</span>
-          </a>
-          <a href="#" class="hero-section__info-cta text-preset-5">
-            What is it?
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <!-- Tablet Hero Section -->
-
-    <section class="hero-section--tablet">
-      <img class="hero-section--tablet__combined-faces" src="./starter-code/assets/tablet/image-hero.png"
-        alt="Images of people" height="160" />
-      <article class="hero-section__text-content-container">
-        <h1 class="hero-section__header text-preset-1">
-          Group Chat for Everyone
-        </h1>
-        <p class="hero-section__description text-preset-4">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <div class="hero-section__cta-container">
-          <a href="#" class="hero-section__download-cta text-preset-5">
-            Download
-            <span class="hero-section__download-cta__alternative-text">v1.3</span>
-          </a>
-          <a href="#" class="hero-section__info-cta text-preset-5">
-            What is it?
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <!-- Desktop Hero Section -->
-
-    <section class="hero-section">
-      <img class="hero-section__left-image" src="./starter-code/assets/desktop/image-hero-left.png" width="394"
-        height="303" alt="Images of people" alt="Images of people" />
-      <article class="hero-section__text-content-container">
-        <h1 class="hero-section__header text-preset-1">
+    <main class="main-content">
+      <!-- Mobile Hero Section -->
+      <section class="hero-section--mobile">
+        <img
+          class="hero-section--mobile__combined-faces"
+          src="./starter-code/assets/tablet/image-hero.png"
+          alt="Images of people"
+          width="416.1"
+          height="160"
+        />
+        <article class="hero-section__text-content-container">
           <h1 class="hero-section__header text-preset-1">
             Group Chat for Everyone
           </h1>
           <p class="hero-section__description text-preset-4">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="hero-section__cta-container">
+            <a href="#" class="hero-section__download-cta text-preset-5">
+              Download<span class="hero-section__download-cta__alternative-text"
+                >v1.3</span
+              >
+            </a>
+            <a href="#" class="hero-section__info-cta text-preset-5">
+              What is it?
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Tablet Hero Section -->
+
+      <section class="hero-section--tablet">
+        <img
+          class="hero-section--tablet__combined-faces"
+          src="./starter-code/assets/tablet/image-hero.png"
+          alt="Images of people"
+          height="160"
+        />
+        <article class="hero-section__text-content-container">
+          <h1 class="hero-section__header text-preset-1">
+            Group Chat for Everyone
+          </h1>
           <p class="hero-section__description text-preset-4">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
@@ -96,86 +94,190 @@
           <div class="hero-section__cta-container">
             <a href="#" class="hero-section__download-cta text-preset-5">
               Download
-              <span class="hero-section__download-cta__alternative-text">v1.3</span>
+              <span class="hero-section__download-cta__alternative-text"
+                >v1.3</span
+              >
             </a>
             <a href="#" class="hero-section__info-cta text-preset-5">
               What is it?
             </a>
           </div>
-      </article>
-      <img class="hero-section__right-image" src="./starter-code/assets/desktop/image-hero-right.png"
-        alt="Images of people" width="394" height="303" />
-    </section>
+        </article>
+      </section>
 
-    <section class="benefit-section">
-      <svg class="benefit-section__number-one-graphic" width="56" height="136" viewBox="0 0 56 136" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect x="27.5" width="1" height="80" fill="#D1D1DF" />
-        <rect x="0.5" y="80.5" width="55" height="55" rx="27.5" fill="#FAFAFA" />
-        <rect x="0.5" y="80.5" width="55" height="55" rx="27.5" stroke="#D1D1DF" />
-        <path
-          d="M24.552 114.176C23.5387 114.176 22.648 113.936 21.88 113.456C21.1227 112.976 20.5307 112.304 20.104 111.44C19.688 110.565 19.48 109.552 19.48 108.4C19.48 107.237 19.688 106.224 20.104 105.36C20.5307 104.496 21.1227 103.824 21.88 103.344C22.648 102.864 23.5387 102.624 24.552 102.624C25.5653 102.624 26.4507 102.864 27.208 103.344C27.976 103.824 28.568 104.496 28.984 105.36C29.4107 106.224 29.624 107.237 29.624 108.4C29.624 109.552 29.4107 110.565 28.984 111.44C28.568 112.304 27.976 112.976 27.208 113.456C26.4507 113.936 25.5653 114.176 24.552 114.176ZM24.552 111.936C25.0747 111.936 25.5227 111.797 25.896 111.52C26.28 111.232 26.5733 110.821 26.776 110.288C26.9893 109.755 27.096 109.125 27.096 108.4C27.096 107.664 26.9893 107.035 26.776 106.512C26.5733 105.979 26.28 105.573 25.896 105.296C25.5227 105.008 25.0747 104.864 24.552 104.864C24.0293 104.864 23.576 105.008 23.192 105.296C22.8187 105.573 22.5253 105.979 22.312 106.512C22.1093 107.035 22.008 107.664 22.008 108.4C22.008 109.125 22.1093 109.755 22.312 110.288C22.5253 110.821 22.8187 111.232 23.192 111.52C23.576 111.797 24.0293 111.936 24.552 111.936ZM32.7174 114V105.424L30.3974 106.352V104.112L33.6774 102.8H35.3094V114H32.7174Z"
-          fill="#87879D" />
-      </svg>
+      <!-- Desktop Hero Section -->
 
-      <div class="benefit-section__image-collage">
-        <img class="image-collage__first-image" src="./starter-code/assets/desktop/image-woman-in-videocall.jpg"
-          alt="image of woman on video call" width="256" height="256" />
-        <img class="image-collage__second-image" src="./starter-code/assets/desktop/image-women-videochatting.jpg"
-          alt="image of women video chatting" width="256" height="256" />
-        <img class="image-collage__third-image" src="./starter-code/assets/desktop/image-men-in-meeting.jpg"
-          alt="image of man in a meeting." width="256" height="256" />
-        <img class="image-collage__fourth-image" src="./starter-code/assets/desktop/image-man-texting.jpg"
-          alt="image of man texting" width="256" height="256" />
-      </div>
+      <section class="hero-section">
+        <img
+          class="hero-section__left-image"
+          src="./starter-code/assets/desktop/image-hero-left.png"
+          width="394"
+          height="303"
+          alt="Images of people"
+          alt="Images of people"
+        />
+        <article class="hero-section__text-content-container">
+          <h1 class="hero-section__header text-preset-1">
+            Group Chat for Everyone
+          </h1>
+          <p class="hero-section__description text-preset-4"></p>
+          <p class="hero-section__description text-preset-4">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="hero-section__cta-container">
+            <a href="#" class="hero-section__download-cta text-preset-5">
+              Download
+              <span class="hero-section__download-cta__alternative-text"
+                >v1.3</span
+              >
+            </a>
+            <a href="#" class="hero-section__info-cta text-preset-5">
+              What is it?
+            </a>
+          </div>
+        </article>
+        <img
+          class="hero-section__right-image"
+          src="./starter-code/assets/desktop/image-hero-right.png"
+          alt="Images of people"
+          width="394"
+          height="303"
+        />
+      </section>
 
-      <article class="benefit-section__text-content-container">
-        <div class="benefit-section__title-container">
-          <h3 class="benefit-section__smaller-title text-preset-3">
+      <section class="benefit-section">
+        <svg
+          class="benefit-section__number-one-graphic"
+          width="56"
+          height="136"
+          viewBox="0 0 56 136"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="27.5" width="1" height="80" fill="#D1D1DF" />
+          <rect
+            x="0.5"
+            y="80.5"
+            width="55"
+            height="55"
+            rx="27.5"
+            fill="#FAFAFA"
+          />
+          <rect
+            x="0.5"
+            y="80.5"
+            width="55"
+            height="55"
+            rx="27.5"
+            stroke="#D1D1DF"
+          />
+          <path
+            d="M24.552 114.176C23.5387 114.176 22.648 113.936 21.88 113.456C21.1227 112.976 20.5307 112.304 20.104 111.44C19.688 110.565 19.48 109.552 19.48 108.4C19.48 107.237 19.688 106.224 20.104 105.36C20.5307 104.496 21.1227 103.824 21.88 103.344C22.648 102.864 23.5387 102.624 24.552 102.624C25.5653 102.624 26.4507 102.864 27.208 103.344C27.976 103.824 28.568 104.496 28.984 105.36C29.4107 106.224 29.624 107.237 29.624 108.4C29.624 109.552 29.4107 110.565 28.984 111.44C28.568 112.304 27.976 112.976 27.208 113.456C26.4507 113.936 25.5653 114.176 24.552 114.176ZM24.552 111.936C25.0747 111.936 25.5227 111.797 25.896 111.52C26.28 111.232 26.5733 110.821 26.776 110.288C26.9893 109.755 27.096 109.125 27.096 108.4C27.096 107.664 26.9893 107.035 26.776 106.512C26.5733 105.979 26.28 105.573 25.896 105.296C25.5227 105.008 25.0747 104.864 24.552 104.864C24.0293 104.864 23.576 105.008 23.192 105.296C22.8187 105.573 22.5253 105.979 22.312 106.512C22.1093 107.035 22.008 107.664 22.008 108.4C22.008 109.125 22.1093 109.755 22.312 110.288C22.5253 110.821 22.8187 111.232 23.192 111.52C23.576 111.797 24.0293 111.936 24.552 111.936ZM32.7174 114V105.424L30.3974 106.352V104.112L33.6774 102.8H35.3094V114H32.7174Z"
+            fill="#87879D"
+          />
+        </svg>
+
+        <div class="benefit-section__image-collage">
+          <img
+            class="image-collage__first-image"
+            src="./starter-code/assets/desktop/image-woman-in-videocall.jpg"
+            alt="image of woman on video call"
+            width="256"
+            height="256"
+          />
+          <img
+            class="image-collage__second-image"
+            src="./starter-code/assets/desktop/image-women-videochatting.jpg"
+            alt="image of women video chatting"
+            width="256"
+            height="256"
+          />
+          <img
+            class="image-collage__third-image"
+            src="./starter-code/assets/desktop/image-men-in-meeting.jpg"
+            alt="image of man in a meeting."
+            width="256"
+            height="256"
+          />
+          <img
+            class="image-collage__fourth-image"
+            src="./starter-code/assets/desktop/image-man-texting.jpg"
+            alt="image of man texting"
+            width="256"
+            height="256"
+          />
+        </div>
+
+        <article class="benefit-section__text-content-container">
+          <div class="benefit-section__title-container">
             <h3 class="benefit-section__smaller-title text-preset-3">
               Built for modern use
             </h3>
             <h2 class="benefit-section__larger-title text-preset-2">
-              <h2 class="benefit-section__larger-title text-preset-2">
-                Smarter meetings, all in one place
-              </h2>
+              Smarter meetings, all in one place
+            </h2>
+          </div>
+          <p class="benefit-section__description text-preset-4">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <svg
+        class="footer-section__number-two-graphic"
+        width="56"
+        height="136"
+        viewBox="0 0 56 136"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="27.5" width="1" height="80" fill="#D1D1DF" />
+        <rect
+          x="0.5"
+          y="80.5"
+          width="55"
+          height="55"
+          rx="27.5"
+          fill="#FAFAFA"
+        />
+        <rect
+          x="0.5"
+          y="80.5"
+          width="55"
+          height="55"
+          rx="27.5"
+          stroke="#D1D1DF"
+        />
+        <path
+          d="M23.052 114.176C22.0387 114.176 21.148 113.936 20.38 113.456C19.6227 112.976 19.0307 112.304 18.604 111.44C18.188 110.565 17.98 109.552 17.98 108.4C17.98 107.237 18.188 106.224 18.604 105.36C19.0307 104.496 19.6227 103.824 20.38 103.344C21.148 102.864 22.0387 102.624 23.052 102.624C24.0653 102.624 24.9507 102.864 25.708 103.344C26.476 103.824 27.068 104.496 27.484 105.36C27.9107 106.224 28.124 107.237 28.124 108.4C28.124 109.552 27.9107 110.565 27.484 111.44C27.068 112.304 26.476 112.976 25.708 113.456C24.9507 113.936 24.0653 114.176 23.052 114.176ZM23.052 111.936C23.5747 111.936 24.0227 111.797 24.396 111.52C24.78 111.232 25.0733 110.821 25.276 110.288C25.4893 109.755 25.596 109.125 25.596 108.4C25.596 107.664 25.4893 107.035 25.276 106.512C25.0733 105.979 24.78 105.573 24.396 105.296C24.0227 105.008 23.5747 104.864 23.052 104.864C22.5293 104.864 22.076 105.008 21.692 105.296C21.3187 105.573 21.0253 105.979 20.812 106.512C20.6093 107.035 20.508 107.664 20.508 108.4C20.508 109.125 20.6093 109.755 20.812 110.288C21.0253 110.821 21.3187 111.232 21.692 111.52C22.076 111.797 22.5293 111.936 23.052 111.936ZM29.1434 114V112.24L33.8794 107.552C34.0607 107.381 34.2047 107.216 34.3114 107.056C34.418 106.885 34.498 106.715 34.5514 106.544C34.6047 106.373 34.6314 106.203 34.6314 106.032C34.6314 105.669 34.4714 105.371 34.1514 105.136C33.842 104.891 33.4527 104.768 32.9834 104.768C32.482 104.768 32.0127 104.875 31.5754 105.088C31.138 105.291 30.6634 105.643 30.1514 106.144L28.7754 104.464C29.4154 103.856 30.0927 103.397 30.8074 103.088C31.5327 102.779 32.2847 102.624 33.0634 102.624C33.8634 102.624 34.5567 102.763 35.1434 103.04C35.7407 103.307 36.2047 103.685 36.5354 104.176C36.866 104.656 37.0314 105.221 37.0314 105.872C37.0314 106.224 36.978 106.565 36.8714 106.896C36.7754 107.216 36.6207 107.531 36.4074 107.84C36.194 108.149 35.9167 108.469 35.5754 108.8L32.3434 111.92L37.1914 111.904V114H29.1434Z"
+          fill="#87879D"
+        />
+      </svg>
+
+      <section class="footer-section__hero-container">
+        <div class="footer-section__overlay"></div>
+
+        <div class="footer-section__content-container">
+          <h2 class="footer-section__title text-preset-2">
+            Experience more together
+          </h2>
+          <p class="footer-section__description text-preset-4">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <a href="#" class="footer-section__download-cta text-preset-5">
+            Download
+            <span class="footer-section__download-cta__alternative-text"
+              >v1.3</span
+            >
+          </a>
         </div>
-        <p class="benefit-section__description text-preset-4">
-        <p class="benefit-section__description text-preset-4">
-          Send messages, share files, show your screen, and record your
-          meetings — all in one workspace. Control who can join with
-          invite-only team access, data encryption, and data export.
-        </p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer-section">
-    <svg class="footer-section__number-two-graphic" width="56" height="136" viewBox="0 0 56 136" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <rect x="27.5" width="1" height="80" fill="#D1D1DF" />
-      <rect x="0.5" y="80.5" width="55" height="55" rx="27.5" fill="#FAFAFA" />
-      <rect x="0.5" y="80.5" width="55" height="55" rx="27.5" stroke="#D1D1DF" />
-      <path
-        d="M23.052 114.176C22.0387 114.176 21.148 113.936 20.38 113.456C19.6227 112.976 19.0307 112.304 18.604 111.44C18.188 110.565 17.98 109.552 17.98 108.4C17.98 107.237 18.188 106.224 18.604 105.36C19.0307 104.496 19.6227 103.824 20.38 103.344C21.148 102.864 22.0387 102.624 23.052 102.624C24.0653 102.624 24.9507 102.864 25.708 103.344C26.476 103.824 27.068 104.496 27.484 105.36C27.9107 106.224 28.124 107.237 28.124 108.4C28.124 109.552 27.9107 110.565 27.484 111.44C27.068 112.304 26.476 112.976 25.708 113.456C24.9507 113.936 24.0653 114.176 23.052 114.176ZM23.052 111.936C23.5747 111.936 24.0227 111.797 24.396 111.52C24.78 111.232 25.0733 110.821 25.276 110.288C25.4893 109.755 25.596 109.125 25.596 108.4C25.596 107.664 25.4893 107.035 25.276 106.512C25.0733 105.979 24.78 105.573 24.396 105.296C24.0227 105.008 23.5747 104.864 23.052 104.864C22.5293 104.864 22.076 105.008 21.692 105.296C21.3187 105.573 21.0253 105.979 20.812 106.512C20.6093 107.035 20.508 107.664 20.508 108.4C20.508 109.125 20.6093 109.755 20.812 110.288C21.0253 110.821 21.3187 111.232 21.692 111.52C22.076 111.797 22.5293 111.936 23.052 111.936ZM29.1434 114V112.24L33.8794 107.552C34.0607 107.381 34.2047 107.216 34.3114 107.056C34.418 106.885 34.498 106.715 34.5514 106.544C34.6047 106.373 34.6314 106.203 34.6314 106.032C34.6314 105.669 34.4714 105.371 34.1514 105.136C33.842 104.891 33.4527 104.768 32.9834 104.768C32.482 104.768 32.0127 104.875 31.5754 105.088C31.138 105.291 30.6634 105.643 30.1514 106.144L28.7754 104.464C29.4154 103.856 30.0927 103.397 30.8074 103.088C31.5327 102.779 32.2847 102.624 33.0634 102.624C33.8634 102.624 34.5567 102.763 35.1434 103.04C35.7407 103.307 36.2047 103.685 36.5354 104.176C36.866 104.656 37.0314 105.221 37.0314 105.872C37.0314 106.224 36.978 106.565 36.8714 106.896C36.7754 107.216 36.6207 107.531 36.4074 107.84C36.194 108.149 35.9167 108.469 35.5754 108.8L32.3434 111.92L37.1914 111.904V114H29.1434Z"
-        fill="#87879D" />
-    </svg>
-
-    <h2 class="footer-section__title text-preset-2">
-      <h2 class="footer-section__title text-preset-2">
-        Experience more together
-      </h2>
-      <p class="footer-section__description text-preset-4">
-      <p class="footer-section__description text-preset-4">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <a href="#" class="footer-section__download-cta text-preset-5">
-        <a href="#" class="footer-section__download-cta text-preset-5">
-          Download v1.3
-        </a>
-      </a>
-  </footer>
-</body>
-
+      </section>
+    </footer>
+  </body>
 </html>

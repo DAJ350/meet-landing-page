@@ -7,6 +7,7 @@
 
 body {
   max-width: 100vw;
+  background-color: var(--white);
 }
 /* Colour Styles */
 
@@ -78,10 +79,6 @@ body {
 }
 
 /* Main Content Styles */
-.main-content,
-header {
-  background-color: var(--white);
-}
 
 .hero-section--tablet {
   display: none;
@@ -145,9 +142,16 @@ header {
   color: var(--white);
   text-wrap: nowrap;
   text-align: center;
+  transition: all 0.5s ease 0s;
 }
 
-.hero-section__download-cta__alternative-text, .hero-section--mobile .hero-section__download-cta__alternative-text, .hero-section--tablet .hero-section__download-cta__alternative-text {
+.hero-section__download-cta:hover {
+  background-color: #71c0d4;
+}
+
+.hero-section__download-cta__alternative-text,
+.hero-section--mobile .hero-section__download-cta__alternative-text,
+.hero-section--tablet .hero-section__download-cta__alternative-text {
   color: var(--cyan-300);
   margin-left: 0.25rem;
 }
@@ -158,11 +162,148 @@ header {
   border-radius: 1.8125rem;
   color: var(--white);
   text-wrap: nowrap;
+  transition: all 0.5s ease 0s;
 }
+
+.hero-section__info-cta:hover {
+  background-color: #b18bdd;
+}
+
+/* Benefits Section Styles */
+
+.benefit-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4rem;
+  padding: 3.5rem 10rem 4.5rem;
+}
+
+.benefit-section__image-collage {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.image-collage__first-image,
+.image-collage__second-image,
+.image-collage__third-image,
+.image-collage__fourth-image {
+  border-radius: 8px;
+}
+
+.benefit-section__text-content-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  row-gap: 2rem;
+  max-width: 48.571428571428571%;
+}
+
+.benefit-section__title-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  max-inline-size: 81.801470588235294%;
+}
+
+.benefit-section__smaller-title {
+  color: var(--cyan-600);
+  text-transform: uppercase;
+}
+
+.benefit-section__larger-title {
+  color: var(--slate-900);
+}
+
+.benefit-section__description {
+  color: var(--slate-600);
+}
+
+/* Footer Section */
+
+.footer-section {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  align-items: center;
+}
+
+.footer-section__number-two-graphic {
+  z-index: 3;
+}
+
+.footer-section__hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  padding: 7rem 5rem;
+  position: absolute;
+  top: 6.75rem;
+  background-image: url(./starter-code/assets/desktop/image-footer.jpg);
+  background-size: cover;
+  z-index: 2;
+}
+
+.footer-section__overlay {
+  background-color: var(--cyan-600);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.footer-section__content-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 70rem;
+}
+
+.footer-section__title {
+  color: var(--white);
+  z-index: 2;
+  text-align: left;
+  inline-size: 445px;
+}
+
+.footer-section__description {
+  color: var(--white);
+  max-inline-size: 355px;
+  z-index: 2;
+}
+
+.footer-section__download-cta {
+  z-index: 2;
+  text-align: right;
+  align-self: center;
+  max-inline-size: auto;
+  border-radius: 1.8125rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--purple-600);
+  color: var(--white);
+  transition: all 0.5s ease 0s;
+}
+
+.footer-section__download-cta__alternative-text {
+  color: var(--purple-300);
+}
+
+.footer-section__download-cta:hover {
+  background-color: #b18bdd;
+}
+
 /* Media Queries */
 
 /* Tablet */
-@media only screen and (max-width: 768px) and (min-width: 424px) {
+@media only screen and (max-width: 768px) and (min-width: 431px) {
   .header-section {
     padding: 3rem 5rem 0 5rem;
   }
@@ -192,7 +333,7 @@ header {
 }
 
 /* Mobile */
-@media only screen and (max-width: 423px) {
+@media only screen and (max-width: 430px) {
   .header-section {
     padding: 3rem 5rem 0 5rem;
   }
@@ -214,7 +355,6 @@ header {
   .hero-section--mobile__combined-faces {
     object-fit: cover;
     block-size: 100%;
-
   }
 
   .hero-section__text-content-container {
