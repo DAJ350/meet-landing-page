@@ -183,7 +183,7 @@ body {
 .benefit-section__image-collage {
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
+  column-gap: 2.857142857142857%;
   min-width: 100%;
 }
 
@@ -192,6 +192,8 @@ body {
 .image-collage__third-image,
 .image-collage__fourth-image {
   border-radius: 8px;
+  max-width: 22.857142857142857%;
+  height: auto;
 }
 
 .benefit-section__text-content-container {
@@ -240,12 +242,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
+  width: 100%;
   padding: 7rem 5rem;
   position: absolute;
   top: 6.75rem;
   background-image: url(./starter-code/assets/desktop/image-footer.jpg);
   background-size: cover;
+  background-position: center;
   z-index: 2;
 }
 
@@ -255,8 +258,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
   min-height: 100%;
   z-index: 1;
 }
@@ -265,15 +267,16 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: flex-end;
-  width: 70rem;
+  align-items: flex-start;
+  width: 77.777777777777778vw;
 }
 
 .footer-section__title {
   color: var(--white);
   z-index: 2;
   text-align: left;
-  inline-size: 445px;
+  inline-size: 39.732142857142857%;
+  text-wrap: stable;
 }
 
 .footer-section__description {
@@ -285,7 +288,8 @@ body {
 .footer-section__download-cta {
   z-index: 2;
   text-align: right;
-  align-self: center;
+  text-wrap: nowrap;
+  align-self: flex-start;
   max-inline-size: auto;
   border-radius: 1.8125rem;
   padding: 1rem 2.5rem;
@@ -406,6 +410,7 @@ body {
 
   .footer-section__content-container {
     flex-flow: column nowrap;
+    align-items: center;
     max-width: 100%;
     row-gap: 1.5rem;
     overflow: hidden;
@@ -414,7 +419,7 @@ body {
 
   .footer-section__title {
     text-wrap: wrap;
-    max-inline-size: 100%;
+    width: 100%;
     text-align: center;
   }
 
@@ -422,5 +427,9 @@ body {
     max-inline-size: 100%;
     text-align: center;
     text-wrap: pretty;
+  }
+
+  .footer-section__download-cta {
+    align-self: center;
   }
 }
