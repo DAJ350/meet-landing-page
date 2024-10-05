@@ -300,6 +300,7 @@ body {
 
 .footer-section__download-cta__alternative-text {
   color: var(--purple-300);
+  padding-left: 0.25rem;
 }
 
 .footer-section__download-cta:hover {
